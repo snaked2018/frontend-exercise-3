@@ -1,0 +1,405 @@
+/* Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+/* Variables */
+:root {
+    --clr-neutral-100: hsla(210, 17%, 36%, 1);
+    --clr-neutral-500: hsla(201, 11%, 66%, 1);
+    --clr-neutral-400: hsla(210, 10%, 33%, 1);
+
+    --clr-btn-ios: hsla(171, 66%, 44%, 1);
+    --clr-btn-mac: hsla(233, 100%, 69%, 1);
+
+    --clr-font-primary: hsla(0, 0%, 100%, 1);
+
+    --ff-sz-300:  300;
+    --ff-sz-400:  500;
+    --ff-sz-600:  600;
+    --ff-sz-900:  900;
+
+    --fs-h1h2: 2.875rem;
+    --fs-h6: 1.5rem;
+    --fs-p: 1.125rem;
+    --fs-p1: 1.25rem;
+    --fs-lp: 1rem;
+
+    --fs-mh1: 2.5rem;
+}
+body {
+    margin: auto;
+    max-width: 1900px;
+}
+/* Font Sizes */
+h1, h2 {
+    font-size: var(--fs-h1h2);
+    font-style: normal;
+    font-weight: var(--ff-sz-400);
+    letter-spacing: -0.04688rem;
+    color: var(--clr-neutral-100);
+}
+h2 {
+    font-size: 2.25rem;
+}
+h6 {
+    color: var(--clr-neutral-400);
+    font-size: var(--fh-ff-h6);
+    font-weight: var(--ff-sz-400);
+    letter-spacing: -0.02444rem;
+}
+h4 {
+    font-size: var(--fs-h6);
+    font-weight: var(--ff-sz-600);
+    letter-spacing: -0.02444rem;
+    color: var(--clr-neutral-400);
+}
+p {
+    font-size: var(--fs-p);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.875rem; /* 150% */
+    letter-spacing: 0.00938rem;
+    color: var(--clr-neutral-500);
+}
+/* Start of Main Header */
+.main-header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: url("images/bg-header-desktop.png") no-repeat center;
+    background-size: auto 100%;
+}
+.header-logo {
+    margin-bottom: 107px;
+    margin-top: 131px;
+}
+.main-header-desc h1 {
+    font-size: var(--fs-h1h2);
+    margin-bottom: 1rem;
+}
+.main-header-desc p {
+    font-size: var(--fs-p1);
+    margin: auto;
+    width: 65%;
+}
+/* Start of Bottom Header */
+.bottom-header-wrapper {
+    display: flex;
+    text-align: center;
+    margin: 10rem auto;
+}
+.bottom-header-container {
+    margin: auto;
+}
+.bottom-header-container p {
+    margin: auto;
+    width: 45%;
+}
+/* Start of Clipboard-1 */
+.clipboard-1-container {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 6.875rem;
+    height: auto;
+    width: auto;
+}
+.clipboard-1-left {
+    flex-shrink: 0;
+}
+
+.clipboard-1-left-info {
+    width: 25rem;
+}
+.left-desc-info {
+    margin-bottom: 3.5rem;
+}
+.left-desc-info h4 {
+    margin-bottom: .5rem;
+    font-weight: var(--ff-sz-400);
+
+}
+.left-desc-info p {
+    color: var(--clr-neutral-500);
+    font-weight: var(--ff-sz-400);
+    line-height: 1.875rem; /* 187.5% */
+    letter-spacing: 0.0075rem;
+}
+/* Start of Bottom Clipboard */
+.clipboard-1-bottom-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.clipboard-1-bottom-container {
+    margin-top: 5rem;
+}
+.access-clipboard-info p{
+    margin-bottom: 5rem;
+    font-size: var(--fs-p);
+    margin: auto;
+    width: 80%;
+}
+.access-clipboard-info h2{
+    margin-bottom: 1.19rem;
+}
+.image-devices {
+    margin-top: 7rem;
+    margin-bottom: 10rem;
+}
+/* Start of Clipboard 2 */
+.clipboard-2-info {
+    text-align: center;
+    margin-bottom: 4.5rem;
+}
+.clipboard-2-info h2 {
+    margin-bottom: 1.2rem;
+}
+.clipboard-2-features {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    gap: 1.18rem;
+    margin: auto 10.31rem;
+}
+.blacklist-div,
+.snippets-div,
+.sneak-div {
+    margin: auto;
+    width: 21.875rem;
+}
+
+.clipboard-2-features h6 {
+    font-size: var(--fs-h6);
+    margin: 2.5rem auto 1rem auto;
+}
+.clipboard-2-features h6 {
+    font-size: var(--fs-lp);
+}
+/* Start of Features Showcase */
+.col-logo-container {
+    display: flex;
+    margin: 9.5rem auto 5.5rem auto;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+/* Final Clipboard */
+.clipboard-3-container {
+    text-align: center;
+}
+.clipboard-3-container h1 {
+    margin-bottom: 1.19rem;
+}
+
+.btn-ios,
+.btn-mac {
+    margin-top: 56px;
+    height: 3.5rem;
+    width: 14.1875rem;
+    flex-shrink: 0;
+    border-radius: 1.75rem;
+    border: none;
+    color: var(--clr-font-primary);
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+    letter-spacing: 0.03125rem;
+    margin-left: .25rem;
+    margin-right: .25rem;
+}
+.btn-mac {
+    background: var(--clr-btn-mac);
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.10), 0px -3px 0px 0px rgba(0, 0, 0, 0.15) inset;
+}
+.btn-ios {
+    background: var(--clr-btn-ios);
+    box-shadow: 0px 10px 20px 0px rgba(137, 229, 199, 0.50), 0px -3px 0px 0px rgba(0, 0, 0, 0.15) inset;
+}
+/* Start of Footer */
+#footer {
+    width: 100vw;
+    height: 9.375rem;
+    background: var(--clr-neutral-500);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 10rem;
+    background: #F5F6F7;
+    margin-top: 9.37rem;
+}
+.footer-sec {
+    margin: auto 10.31rem;
+    display: grid;
+    grid-template-columns: 300px 1fr 1fr;
+    align-items: center;
+    height: auto;
+}
+.footer-left-container img{
+    width: 3.4375rem;
+    height: 3.4375rem;
+
+}
+
+.footer-nav  {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: start;
+    gap: 20px;
+}
+.footer-nav ul li {
+    color: #4C545C;
+    font-size: var(--fs-p);
+    font-weight: 400;
+    line-height: 1.875rem; /* 166.667% */
+    letter-spacing: 0.00844rem;
+    margin-top: 0.75rem;
+}    
+ul, a {
+    text-decoration: none;
+    list-style-type: none;
+}
+.footer-icons {
+   display: flex;
+   justify-content: end;
+   align-items: center;
+}
+.footer-icons img {
+    padding: 6px;
+}
+/* Media Width 420 Mobile Device Screen */
+@media (max-width: 460px) {
+    .header-logo {
+    width: 7.8125rem;
+    height: 7.8125rem;
+    }
+    img, .image-devices, #clipboard-2, #footer, .clipboard-1-container {
+        overflow: auto;
+    }
+    .main-header h1{
+        width: 90%;
+        margin: auto;
+        font-size: var(--fs-mh1);
+        margin-bottom: 1rem;
+    }
+    .main-header p {
+        margin: auto;
+        width: 90%;
+        margin-bottom: 3rem;
+    }
+    .main-header .btn-ios {
+        margin-top: 0;
+    }
+    .btn-ios, .btn-mac {
+        width: 90%;
+    }
+    .main-header .btn-mac {
+        margin-top: 1.5rem;
+    }
+    .bottom-header-container p {
+        width: 90%;
+        margin: auto;
+        margin-top: 1rem;
+    }
+    .bottom-header-wrapper{
+        margin-top: 10rem;
+        margin-bottom: 5rem;
+    }
+    /* Start of Clipboard-1 */
+    .clipboard-1-container {
+        display: inline-flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3rem;
+        height: auto;
+        width: 100%;
+    }
+    .clipboard-1-left {
+        flex-shrink: 1;
+        margin: auto;
+    }
+    .clipboard-1-left img {
+        width: 400px;
+    }
+
+    .clipboard-1-left-info {
+        align-items: center;
+        text-align: center;
+        margin: auto;
+    }
+    .left-desc-info {
+        margin-bottom: 3.5rem;
+    }
+    .left-desc-info h4 {
+        margin-bottom: .5rem;
+        font-weight: var(--ff-sz-400);
+
+    }
+    .left-desc-info p {
+        color: var(--clr-neutral-500);
+        font-weight: var(--ff-sz-400);
+        line-height: 1.875rem; /* 187.5% */
+        letter-spacing: 0.0075rem;
+    }
+    /* Clipboard-1 Bottom */
+    .access-clipboard-info p {
+        width: 90%;
+        margin: auto;
+    }
+    .clipboard-1-bottom-container div img {
+        width: 100%;
+    }
+    .image-devices {
+        margin-top: 4rem;
+        margin-bottom: 8rem;
+    }
+    .clipboard-2-features {
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+    }
+    /* Start of Features Showcase */
+    .col-logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3.56rem;
+    }
+    .clipboard-3-container p {
+        width: 90%;
+        margin: auto;
+    }
+    .clipboard-3-container .btn-mac {
+        margin-top: 1.5rem;
+    }
+    /* Footer Desktop Disabled */
+    #footer {
+        width: 100%;
+        height: 500px;
+    }
+    .footer-sec, .footer-nav {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    .footer-nav {
+        gap: 0;
+    }
+    .footer-left-container img {
+        margin-top: 0;
+        margin-bottom: 2.5rem;
+    }
+    .footer-nav {
+        margin-bottom: 3rem;
+    }
+}
